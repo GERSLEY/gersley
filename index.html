@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Plan - $5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+      text-align: center;
+    }
+    img.preview {
+      width: 300px;
+      height: auto;
+      filter: blur(5px);
+    }
+    .locked-message {
+      color: red;
+      margin: 10px 0;
+    }
+    .buy-button {
+      background-color: #0070ba;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Modern House Plan</h1>
+  <p class="locked-message">Unlock full house plan for just $5</p>
+  <img src="preview.jpg" alt="House Preview" class="preview" />
+  <br /><br />
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="brunopiard_">
+    <input type="hidden" name="item_name" value="Modern House Plan">
+    <input type="hidden" name="amount" value="5.00">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="https://gersley.github.io/download.html">
+
+    <button type="submit" class="buy-button">Buy Now - $5</button>
+  </form>
+</body>
+</html>
